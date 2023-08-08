@@ -1,0 +1,20 @@
+.bannerDivider {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bannerDivider svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 126px;
+}
+
+.bannerDividerFill {
+    fill: #FFFFFF;
+}   

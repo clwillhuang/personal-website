@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+}
+
+.grid > div {
+    margin: 5px;
+}
+
+@media (max-width: 762px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 762px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

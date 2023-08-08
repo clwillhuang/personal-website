@@ -1,0 +1,15 @@
+.box {
+    padding: 20px;
+}
+
+.link {
+    border-radius: 5px;
+    background-color: var(--secondary);
+    padding: 0.6em 1.2em;
+    color: white;
+}
+
+.link:hover {
+    background-color: var(--accent);
+    color: white;
+}
