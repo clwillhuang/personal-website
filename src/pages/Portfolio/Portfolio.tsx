@@ -10,11 +10,11 @@ export default () => {
 
     return(
         <Layout>
-            <h2 className={styles.title}>Portfolio</h2>
+            <h2 className={styles.title} id='projects'>Portfolio</h2>
             <div className={styles.grid}>
                 {
                     data.map((project: Project, index: number) => 
-                        <PortfolioCard project={project} id={index}/>
+                        <PortfolioCard project={project} id={index} key={index}/>
                     )
                 }
             </div>

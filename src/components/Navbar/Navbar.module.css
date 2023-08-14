@@ -1,10 +1,21 @@
 .visible, .hidden {
     max-width: 100vw;
+    height: 75px;
     width: 100vw;
     align-items: center;
     display: flex;
     flex-direction: row;
     padding: 0;
+    z-index: 100;
+}
+
+.visible, .hidden, .menu {
+    background-color: rgb(55, 55, 55);
+}
+
+.fixed {
+    position: fixed;
+    top: -1px;
 }
 
 .icon {
@@ -24,7 +35,7 @@
 }
 
 .item a {
-    color: var(--primary);
+    color: white;
     place-items: center;
     display: flex;
 }
@@ -39,6 +50,7 @@
     border-bottom: 3px solid var(--secondary);
     pointer-events: none;
 }
+
 
 .item a:hover {
     color: var(--accent);
@@ -60,15 +72,10 @@
         text-align:  center;
     }
 
-    .hidden {
-        height: 100px;
-    }
-
     .visible .menu {
         display: flex;
         width: 100vw;
         flex-direction: column;
-        background-color: white;
     }
 
     .item, .activeItem {
@@ -106,7 +113,6 @@
     }
 
     .visible, .hidden {
-        height: 100px;
         box-shadow: 0 0 5px 2px rgba(0,0,0,.33);
     }
 
@@ -119,6 +125,7 @@
     border: none;
     background-color: transparent;
     outline: 0;
+    font-size: 20px;
 }
 
 .mobileToggle button:focus {

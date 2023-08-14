@@ -1,3 +1,12 @@
+.animate {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.animateAfterScroll {
+	opacity: 1;
+}
+
 .homeWrapper {
 	width: 100vw;
 	min-height: 100vh;
@@ -117,7 +126,7 @@
 
 @media (max-width: 576px) {
     .eventRight {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr fit-content(80%);
     }
 }
 
@@ -147,25 +156,25 @@
 
 	.upcomingContainer,
 	.aboutContainer,
-	.memberContainer {
+	.contactContainer {
 		padding: 100px 15px;
 	}
 }
 
 @media (max-width: 560px) {
-	.memberPerks {
+	.contactPerks {
 		grid-template-columns: 1fr;
 	}
 }
 
 @media (min-width: 560px) and (max-width: 1024px) {
-	.memberPerks {
+	.contactPerks {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media (min-width: 1024px) {
-	.memberPerks {
+	.contactPerks {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
@@ -174,7 +183,7 @@
 
 	.upcomingContainer,
 	.aboutContainer,
-	.memberContainer {
+	.contactContainer {
 		width: 100%;
 		flex-direction: row;
 		box-sizing: border-box;
@@ -190,7 +199,7 @@
 
 	.upcomingContainer,
 	.aboutContainer,
-	.memberContainer {
+	.contactContainer {
 		padding: 100px 20%;
 	}
 
@@ -204,19 +213,24 @@
 	}
 }
 
-.memberContainer {
+.contactContainer {
+	background-color: white;
 	/* display: inline-block; */
 	text-align: center;
 }
 
-.memberTitle,
+.contactTitle,
 .upcomingTitle {
 	color: var(--primary);
 }
 
-.memberPerks {
+.contactPerks {
 	text-align: left;
 	display: grid;
+}
+
+.contactEmail {
+	color: black;
 }
 
 .perk {

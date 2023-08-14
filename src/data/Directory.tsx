@@ -1,4 +1,4 @@
-import Page from "../models/Page";
+import { Page } from "../models/Page";
 
 export const SiteDirectory : Array<Page> = [
     {
@@ -13,7 +13,7 @@ export const SiteDirectory : Array<Page> = [
     },
     {
         title: 'Portfolio',
-        link: '/portfolio',
+        link: '/portfolio#projects',
         subpages: []
     }
 ]

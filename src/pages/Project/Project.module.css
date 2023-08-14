@@ -9,4 +9,14 @@
     margin-left: 5px;
     margin-right: 5px;
     width: min-content;
+    white-space: nowrap;
+}
+
+.body {
+    font-size: 14px;
+}
+
+.horizontalDivider {
+    width: 100%;
+    color: var(--primary);
 }

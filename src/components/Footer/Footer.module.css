@@ -15,10 +15,14 @@
         display: inline-flex;
     }
     .background {
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
     }
     .linkList li {
         margin-right: 10px;
+    }
+    .right {
+        display: grid;
+        place-items: center;
     }
 }
 
@@ -47,7 +51,7 @@
     }
 
     .background {
-        padding: 40px;
+        padding: 40px 40px 10px 40px;
     }
 }
 
@@ -62,14 +66,14 @@
 .linkList {
     list-style: none;
     margin: auto;
-    padding: 0;
+    padding: 0 0 20px 0;
 }
 
 .item a {
     color: white;
     font-size: 20px;
     padding-top: 10px;
-    color: var(--primary);
+    color: white;
     place-items: center;
     display: flex;
     flex-direction: row;
@@ -81,7 +85,7 @@
 }
 
 .item a:hover {
-    color: var(--accent);
+    color: var(--secondary);
 }
 
 .socials {
@@ -96,4 +100,9 @@
 
 .socials a:hover {
     color: var(--accent);
+}
+
+.credit {
+    color: gray;
+    text-align: center;
 }

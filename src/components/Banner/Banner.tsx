@@ -1,27 +1,36 @@
 import styles from './Banner.module.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
 
-    const title : string = "Title Here"
-    const subtitle : string = "Subtitle Here"
-    const navigate = useNavigate();
+    const title: string = "Hello there! 👋"
+    const subtitle: string = "My name is William, an aspiring software developer at the University of Toronto."
+
+    const jumpToAbout = () => {
+        if (document) {
+            document.getElementById('about')?.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
 
     return (
         <div className={styles.banner}>
             <div className={styles.image}>
-                <img src="/blue-bg.jpg">
-                </img>
+                {/* Add an image here if needed. */}
+                {/* <img src="/blue-bg.jpg"/> */}
             </div>
             <div className={styles.tint}>
                 <div className={styles.content}>
                     <h1>{title} </h1>
                     <p>{subtitle}</p>
                     <div className={styles.buttons}>
-                        <button onClick={() => navigate('/#about')}>About</button>
-                        <button onClick={() => navigate('/portfolio')}>Portfolio</button>
+                        <button role='button' title='Read more about me' onClick={() => jumpToAbout()}>About me</button>
+                        <Link to='/portfolio#projects' title='View my full portfolio'>
+                            <button role='button'>Portfolio</button>
+                        </Link>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     );
