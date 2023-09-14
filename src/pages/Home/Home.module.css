@@ -126,7 +126,7 @@
 
 @media (max-width: 576px) {
     .eventRight {
-        grid-template-columns: 1fr fit-content(80%);
+        grid-template-columns: 1fr;
     }
 }
 

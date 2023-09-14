@@ -36,7 +36,7 @@ export const Navbar = () => {
                         )
                     }
                     <li className={styles.item}>
-                        <a href='https://github.com/What-Is-A-Username' target='_blank' referrerPolicy='no-referrer'>
+                        <a href='https://github.com/clwillhuang' target='_blank' referrerPolicy='no-referrer'>
                             GitHub
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
                                 {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --> */}

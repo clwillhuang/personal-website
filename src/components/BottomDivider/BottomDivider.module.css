@@ -1,6 +1,6 @@
 .bannerDivider {
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 0;
     width: 100%;
     overflow: hidden;
