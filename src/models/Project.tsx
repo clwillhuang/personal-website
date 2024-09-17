@@ -8,7 +8,8 @@ export default interface Project {
     previewImage: string | null,
     shortDescription: string,
     projectPrompt: string | null,
-    projectLink: string | null,
+    repoLink?: string,
+    projectLink?: string,
     summary: ReactNode,
     lessons: ReactNode
 }

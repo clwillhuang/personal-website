@@ -9,6 +9,10 @@
     color: white;
 }
 
+.link svg {
+    margin-right: 0.8em;
+}
+
 .link:hover {
     background-color: var(--accent);
     color: white;

@@ -1,10 +1,12 @@
 import { useMemo } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import Project from "../../models/Project"
 import { Portfolio } from "../../data/PortfolioData"
 import { Layout } from "../../components/Layout/Layout"
 import styles from "./Project.module.css"
 import BackButton from "../../components/BackButton/BackButton"
+import ExternalLinkButton from "../../components/ExternalLinkButton/ExternalLinkButton"
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
 
 export default () => {
 
@@ -25,12 +27,16 @@ export default () => {
         return(<div></div>);
     }
 
-    const { title, stack, languages, summary, lessons, previewImage, projectLink, projectPrompt } = project;
+    const { title, stack, languages, summary, lessons, previewImage, projectLink, projectPrompt, repoLink } = project;
 
     return (
         <Layout>
             <h2>{title}</h2>
             {previewImage && <img src={previewImage}/>}
+            <div className={styles.prompts}>
+                { (projectPrompt && projectLink) && <ExternalLinkButton href={projectLink} text={projectPrompt}/>}
+                { (repoLink) && <ExternalLinkButton href={repoLink} text='View Repository' icon={faGithub}/>}
+            </div>
             <h3>Technologies, Tools, Packages</h3>
             <div className={styles.stack}>
                     {stack.map(stackItem => <span key={stackItem}>{stackItem}</span>)}
@@ -43,7 +49,6 @@ export default () => {
             <div>{summary}</div>
             <h3>What did I learn?</h3>
             <div>{lessons}</div>
-            {(projectLink && projectPrompt) && <Link to={projectLink}><button>{projectPrompt}</button></Link>}
             <hr className={styles.horizontalDivider}/>
             <BackButton to='/portfolio' text='Back to all projects'/>
         </Layout>
