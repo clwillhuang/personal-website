@@ -4,7 +4,7 @@ export const Experiences: Array<Experience> = [
     {
         role: 'Web Portal Developer Intern',
         company: 'Nokia',
-        dates: 'Jan to May 2024',
+        dates: 'Jan 2024 to Apr 2024',
         description: [
             'Designed and implemented a forum moderation system using Django and HTMX, complete with content reporting, ticket creation, and user suspensions.',
             'Redesigned the support portal to add in subroles for support technicians and an adminstrator dashboard, allowing for other teams to independently manage and customer organizations roles.',
@@ -15,7 +15,7 @@ export const Experiences: Array<Experience> = [
     {
         role: 'Undergraduate Researcher',
         company: 'University of Toronto',
-        dates: 'May to Aug 2023',
+        dates: 'May 2023 to Aug 2023',
         description: [
             'Designed and developed a RESTful API using Django and PostgreSQL to perform remote data analysis of bioinformatics sequence analysis, capable of handling thousands of sequences per job submission and integrating with API from the National Institutes of Health',
             "Deployed prototype to Amazon Web Services or university's web servers using Docker and NGINX.",

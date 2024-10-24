@@ -110,6 +110,10 @@
 	text-align: center;
 }
 
+.eventContainer button {
+	background-color: var(--secondary);
+}
+
 .eventLeft,
 .eventRight {
 	padding: 0;

@@ -26,7 +26,7 @@ const Banner = () => {
                     <p>{subtitle}</p>
                     <div className={styles.buttons}>
                         <button role='button' title='Read more about me' onClick={() => jumpToAbout()}>About me</button>
-                        <Link to='/portfolio#' title='View my full portfolio'>
+                        <Link to='/portfolio#projects' title='View my full portfolio'>
                             <button role='button'>Portfolio</button>
                         </Link>
                     </div>

@@ -74,8 +74,8 @@ function App() {
 						)
 					}
 				</div>
-				<Link to='/portfolio#' title='View my full portfolio'>
-					<button role='button'>View my full portfolio</button>
+				<Link to='/portfolio#projects' title='View my full portfolio'>
+					<button role='button' style={{fontSize: '20px'}}>View my full portfolio</button>
 				</Link>
 
 				<div className={styles.eventDividerBottom}>

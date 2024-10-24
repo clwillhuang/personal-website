@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import Project from "../../models/Project"
 import { Portfolio } from "../../data/PortfolioData"
@@ -26,6 +26,12 @@ export default () => {
         navigate('/404');
         return(<div></div>);
     }
+
+    // Scroll to the top whenever on this page
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+        console.log("SR")
+    }, []);
 
     const { title, stack, languages, summary, lessons, previewImage, projectLink, projectPrompt, repoLink } = project;
 
