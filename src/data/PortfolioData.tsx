@@ -50,8 +50,8 @@ export const Portfolio: Array<Project> = [
         tags: [],
         shortDescription: 'My undergraduate research project aiming to streamline DNA sequence analysis and collation for species identification.',
         previewImage: 'https://clwillhuang.github.io/personal-website/barrel.png',
-        projectPrompt: 'Visit',
-        projectLink: 'http://barrel.utsc.utoronto.ca/app',
+        projectPrompt: 'GitHub',
+        projectLink: 'https://github.com/clwillhuang/barcode-identifier-api',
         summary:
         <>
             <p>
