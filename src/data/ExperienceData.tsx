@@ -8,7 +8,7 @@ export const Experiences: Array<Experience> = [
         description: [
             'Designed and implemented a forum moderation system using Django and HTMX, complete with content reporting, ticket creation, and user suspensions.',
             'Redesigned the support portal to add in subroles for support technicians and an adminstrator dashboard, allowing for other teams to independently manage and customer organizations roles.',
-            'Audited the security of backend endpoints in Django, patching edge cases and missing authorization checks for 15 endpoints.',
+            'Audited the security of backend endpoints in Django, patching edge cases and missing authorization checks for endpoints.',
             'Implemented a Flask API to automatically generate documentation pages based on requests made from Jenkin\'s pipeline.',
         ]
     },
@@ -47,7 +47,7 @@ export const Experiences: Array<Experience> = [
         dates: 'Sep 2021 to Apr 2022',
         description: [
             'Proficiently utilized the Biobanking Information Management System software to annotate samples and prepare monthly sample reports for presentation in lab meetings.',
-            'Efficiently automated data entry workflows using Python and Visual Basic, resulting in bulk operations taking 30% faster across the project size of more than 12000 patient samples.'
+            'Efficiently automated data entry workflows using Python and Visual Basic, resulting in bulk operations taking 30% faster across the project size of more than 1200 patient samples.'
         ]
     }
 ]

@@ -57,7 +57,7 @@ export default () => {
                     <PortfolioFilter
                         options={languageOptions}
                         onChange={createHandler(setSelectedLangs)}
-                        placeholder='JS, Python, Java...'
+                        placeholder='JavaScript, Python, Java...'
                     />
                 </div>
             </span>

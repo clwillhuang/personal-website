@@ -2,6 +2,30 @@ import Project from "../models/Project";
 
 export const Portfolio: Array<Project> = [
     {
+        title: 'Transport Manager',
+        stack: ['Express', 'PostgreSQL', 'React'],
+        languages: ['TypeScript', 'Squirrel'],
+        tags: [],
+        shortDescription: 'Transport Manager is a web application using sockets and a REST API to provide an interactive map to users.',
+        previewImage: 'https://clwillhuang.github.io/personal-website/transport-manager.png',
+        projectPrompt: 'Preview',
+        projectLink: 'https://transport-manager-ttd.vercel.app/',
+        summary:
+        <>
+            <p>
+                Transport Manager is a web application using sockets and a REST API to provide an interactive map to users. Map data consists of towns, industries and stations existing in "OpenTTD", a classic management simulation game where players are run a company to transport goods with trains, ships, road vehicles, and airplanes. Transport Manager aims to provide a user-friendly interface for players to view their world, create route plans, and share their maps with others.
+            </p>
+        </>,
+        lessons: <ul>
+            <li>Used web sockets to allow the Express server to communicate with a user's locally running instance of OpenTTD, which involved encoding and decoding byte packets using Node.js's Buffer library. A web socket is also used to notify React application with server notifications.</li>
+            <li>Developed REST API using Express with TypeScript.</li>
+            <li>Used Drizzle ORM to connect to a PostgreSQL database and define tables for storing all map data.</li>
+            <li>Used React hooks to design a responsive user interface allowing users to pan and zoom around the map.</li>
+            <li>Used TypeScript types and component inheritance with generics to create map components while minimizing code duplication.</li>
+            <li>Created my first Squirrel script, which runs within OpenTTD to export map data over the application socket.</li>
+        </ul>
+    },
+    {
         title: 'Linux System Monitor',
         stack: ['Linux', 'Make'],
         languages: ['C'],
@@ -23,30 +47,9 @@ export const Portfolio: Array<Project> = [
         </ul>
     },
     {
-        title: 'OS Table Viewer',
-        stack: ['Linux', 'Make'],
-        languages: ['C'],
-        tags: [],
-        shortDescription: 'A C program for Linux which summarizes active files, inodes, file descriptors and processes.',
-        projectLink: 'https://github.com/clwillhuang/table-viewer',
-        previewImage: 'https://clwillhuang.github.io/personal-website/table-viewer.jpg',
-        projectPrompt: 'View on GitHub',
-        summary: 
-        <p>
-            A Linux-based tool developed with C which displays to the user information about active files, file descriptors and processes on the machine.
-        </p>,
-        lessons: 
-        <ul>
-            <li>Gained an understanding of role of processes, inodes and file descriptors within the Linux operating system.</li>
-            <li>Used a Makefile to control the compilation and linking of source files into an executable. </li>
-            <li>Output from the tool can be output to terminal, to text file or a binary file.</li>
-            <li>Compared the runtime of the program when outputting to binary and plaintext output formats.</li>
-        </ul>
-    },
-    {
         title: 'Barrel',
         stack: ['Django', 'PostgreSQL', 'Docker', 'React', 'Bootstrap', 'NGINX', 'AWS'],
-        languages: ['Python', 'JS'],
+        languages: ['Python', 'JavaScript'],
         tags: [],
         shortDescription: 'My undergraduate research project aiming to streamline DNA sequence analysis and collation for species identification.',
         previewImage: 'https://clwillhuang.github.io/personal-website/barrel.png',
@@ -74,7 +77,7 @@ export const Portfolio: Array<Project> = [
     {
         title: 'Blankets for TO',
         stack: ['React', 'Gatsby', 'Contentful'],
-        languages: ['JS', 'GraphQL'],
+        languages: ['JavaScript', 'GraphQL'],
         tags: [],
         shortDescription: 'A website independently developed for Blankets for T.O., a student-led organization which has helped connect the public with local shelters and has helped our organization to distribute over 8000 items to shelters and individuals.',
         previewImage: 'https://clwillhuang.github.io/personal-website/bto.png',
@@ -99,6 +102,27 @@ export const Portfolio: Array<Project> = [
         </>
     },
     {
+        title: 'OS Table Viewer',
+        stack: ['Linux', 'Make'],
+        languages: ['C'],
+        tags: [],
+        shortDescription: 'A C program for Linux which summarizes active files, inodes, file descriptors and processes.',
+        projectLink: 'https://github.com/clwillhuang/table-viewer',
+        previewImage: 'https://clwillhuang.github.io/personal-website/table-viewer.jpg',
+        projectPrompt: 'View on GitHub',
+        summary: 
+        <p>
+            A Linux-based tool developed with C which displays to the user information about active files, file descriptors and processes on the machine.
+        </p>,
+        lessons: 
+        <ul>
+            <li>Gained an understanding of role of processes, inodes and file descriptors within the Linux operating system.</li>
+            <li>Used a Makefile to control the compilation and linking of source files into an executable. </li>
+            <li>Output from the tool can be output to terminal, to text file or a binary file.</li>
+            <li>Compared the runtime of the program when outputting to binary and plaintext output formats.</li>
+        </ul>
+    },
+    {
         title: 'Rails and Rails',
         stack: ['Unity 3D', 'Blender'],
         languages: ['C#'],
@@ -121,7 +145,7 @@ export const Portfolio: Array<Project> = [
     {
         title: 'First Year Impact Project',
         stack: ['React', 'Gatsby'],
-        languages: ['JS'],
+        languages: ['JavaScript'],
         tags: [],
         previewImage: 'https://clwillhuang.github.io/personal-website/impact-project.png',
         projectPrompt: 'View on Netlify',
@@ -223,7 +247,7 @@ export const Portfolio: Array<Project> = [
     {
         title: 'Code Projectorium',
         stack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Passport.js'],
-        languages: ['JS'],
+        languages: ['JavaScript'],
         tags: [],
         shortDescription: 'A website side-project allowing users to create code snippets and documentation, complete with comments.',
         summary: 
