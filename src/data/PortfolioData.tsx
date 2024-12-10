@@ -9,6 +9,7 @@ export const Portfolio: Array<Project> = [
         shortDescription: 'Transport Manager is a web application using sockets and a REST API to provide an interactive map to users.',
         previewImage: 'https://clwillhuang.github.io/personal-website/transport-manager.png',
         projectPrompt: 'Preview',
+        repoLink: 'https://github.com/clwillhuang/transport-manager',
         projectLink: 'https://transport-manager-ttd.vercel.app/',
         summary:
         <>
